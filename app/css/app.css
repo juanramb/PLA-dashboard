@@ -28,3 +28,33 @@
   content: "";
   padding: 0;
 }
+
+.pure-g > div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.l-box {
+  padding: 1em;
+}
+.dashboard-menu-groups {
+ background-color: #0E5A8F;
+}
+.dashboard-menu-alumns {
+ background-color: #3084BF;
+}
+.dashboard-menu-filters {
+ background-color: #349EE8;
+}
+.dashboard-menu-logs {
+ background-color: #3695D7;
+}
+.dashboard {
+  background-color: #95C5E7;
+}
+.fa {
+  color: lightgray;
+}
+body {
+  background-color: lightgray;
+}

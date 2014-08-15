@@ -2,15 +2,21 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('myApp', [
+angular.module('PLADash', [
   'ngRoute',
-  'myApp.filters',
-  'myApp.services',
-  'myApp.directives',
-  'myApp.controllers'
+  'PLADash.filters',
+  'PLADash.services',
+  'PLADash.directives',
+  'PLADash.controllers',
+  'PLADash.animations',
+  'picardy.fontawesome'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/', {templateUrl: 'partials/dashboard.html', controller: 'DashboardCtrl'});
+  $routeProvider.when('/groups', {templateUrl: 'partials/dashboard.html', controller: 'DashboardCtrl'});
+  $routeProvider.when('/alumns', {templateUrl: 'partials/dashboard.html', controller: 'DashboardCtrl'});
+  $routeProvider.when('/filters', {templateUrl: 'partials/dashboard.html', controller: 'DashboardCtrl'});
+  $routeProvider.when('/logs', {templateUrl: 'partials/dashboard.html', controller: 'DashboardCtrl'});
   $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/'});
 }]);

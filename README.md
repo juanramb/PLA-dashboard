@@ -5,4 +5,4 @@
 + Integracion de pure en boilerplate como se indica [aquí](http://webdesign.tutsplus.com/tutorials/build-a-modular-dashboard-interface-with-pure--webdesign-13314)
 + Se mete fontawesome para tener iconos de tipografias `bower install fontawesome --save`
 + Se mete angular-fontawesome para poder poner los iconos como elementos angular `bower install angular-fontawesome --save`
-
++ Lodash para operaciones comunes javascript `bower install lodash --save`
